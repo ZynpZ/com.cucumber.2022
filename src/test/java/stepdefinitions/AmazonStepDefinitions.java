@@ -36,6 +36,49 @@ public class AmazonStepDefinitions {
     public void aramaCubugunaJavaYazipAratir() {
         amazonPage.aramaKutusu.sendKeys("Java" + Keys.ENTER);
     }
+
+    @And("Arama sonuclarinin Java icerdigini test eder")
+    public void aramaSonuclarininJavaIcerdiginiTestEder() {
+        String actualAramaSonucu = amazonPage.aramaSonucElementi.getText();
+        String expectedkelime = "Java";
+        Assert.assertTrue(actualAramaSonucu.contains(expectedkelime));
+
+    }
+
+    @Then("Arama cubuguna Apple yazip aratir")
+    public void aramaCubugunaAppleYazipAratir() {
+        amazonPage.aramaKutusu.sendKeys("Apple" + Keys.ENTER);
+    }
+
+    @And("Sonuclarin Apple icerdigini test eder")
+    public void sonuclarinAppleIcerdiginiTestEder() {
+        String actualAramaSonucu = amazonPage.aramaSonucElementi.getText();
+        String expectedkelime = "Apple";
+        Assert.assertTrue(actualAramaSonucu.contains(expectedkelime));
+    }
+
+    @Then("Arama cubuguna {string} yazip aratir")
+    public void aramaCubugunaYazipAratir(String istenenKelime) {
+        amazonPage.aramaKutusu.sendKeys(istenenKelime + Keys.ENTER);
+    }
+
+    @And("Arama sonuclarinin {string} icerdigini test eder")
+    public void aramaSonuclarininIcerdiginiTestEder(String istenenKelime) {
+        String actualAramaSonucu = amazonPage.aramaSonucElementi.getText();
+        Assert.assertTrue(actualAramaSonucu.contains(istenenKelime));
+    }
+
+    @Given("Kullanici {string} anasayfaya gider")
+    public void kullaniciAnasayfayaGider(String istenenUrl) {
+
+        Driver.getDriver().get(ConfigReader.getProperty(istenenUrl));
+    }
+
+    @Then("url'in {string} icerdigini test eder")
+    public void urlInIcerdiginiTestEder(String istenenKelime) {
+        String actualUrl=Driver.getDriver().getCurrentUrl();
+        Assert.assertTrue(actualUrl.contains(istenenKelime));
+    }
 }
 
 

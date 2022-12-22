@@ -1,5 +1,10 @@
-  Feature: US1002_Amazon Arama Testi
-    @wip
+
+Feature: US1002_Amazon Arama Testi
+
+
+      #Kullanicinin arama yapması için 3 scenereio oluştur.
+      # Nutella, Java ve Apple için arama yapıp sonuçların aranan kelime içerdiğini test edin.
+
     Scenario: TC02 Kullanici amazonda Nutella aramasi yapar
       Given Kullanici amazon anasayfaya gider
       Then Arama cubuguna Nutella yazip aratir

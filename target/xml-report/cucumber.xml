@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.617">
-    <testcase classname="US1001 Amazon arama testi" name="TC01 Kullanici Amazonda arama yapabilmeli" time="15.414">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="20.913">
+    <testcase classname="US1005 Parametreli Configuration Properties Kullanimi" name="TC09 kullanici amazon anasayfasına gidebilmeli" time="8.101">
         <system-out>
-            <![CDATA[Given Kullanici amazon anasayfaya gider.....................................passed
-When Arama cubuguna Nutella yazip aratir....................................passed
-Then Arama sonuclarinin Nutella icerdigini test eder........................passed
+            <![CDATA[Given Kullanici "amazonUrl" anasayfaya gider................................passed
+Then url'in "amazon" icerdigini test eder...................................passed
+And Sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1005 Parametreli Configuration Properties Kullanimi" name="TC11 kullanici mycoursedemy anasayfasına gidebilmeli" time="3.421">
+        <system-out>
+            <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
+Then url'in "mycoursedemy" icerdigini test eder.............................passed
+And Sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1005 Parametreli Configuration Properties Kullanimi" name="TC11 kullanici wisequarter anasayfasına gidebilmeli" time="9.107">
+        <system-out>
+            <![CDATA[Given Kullanici "wiseUrl" anasayfaya gider..................................passed
+Then url'in "wisequarter" icerdigini test eder..............................passed
 And Sayfayi kapatir.........................................................passed
 ]]>
         </system-out>
