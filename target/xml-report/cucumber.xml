@@ -1,46 +1,63 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="20.798">
-    <testcase classname="US1006 Doğru Kullanıcı adı ve password ile pozitif login testi" name="TC12 Kullanici mycoursedemy sitesine giriş yapabilmeli" time="20.447">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()='Log in']&quot;}&#10;  (Session info: chrome=108.0.5359.125)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.5.0', revision: 'fe167b119a'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [fca2b3f6b2371ef68214b94882a2cc8b, findElement {using=xpath, value=//a[text()='Log in']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:52036}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52036/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fca2b3f6b2371ef68214b94882a2cc8b" type="org.openqa.selenium.NoSuchElementException">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="60.705">
+    <testcase classname="US1010 Liste olarak verilen wrong user ile negatif login testi" name="_2" time="25.654">
+        <system-out>
             <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
-Then myCourse anasayfa login linkine tiklar.................................failed
-And myCourse kullanici adi olarak "myGecerliEmail" girer....................skipped
-And myCourse password olarak "myGecerliPassword" girer......................skipped
-And myCourse login butonuna basar...........................................skipped
-Then myCourse giris yapabildigini test eder.................................skipped
-And Sayfayi kapatir.........................................................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Log in']"}
-  (Session info: chrome=108.0.5359.125)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.5.0', revision: 'fe167b119a'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fca2b3f6b2371ef68214b94882a2cc8b, findElement {using=xpath, value=//a[text()='Log in']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:52036}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52036/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fca2b3f6b2371ef68214b94882a2cc8b
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy22.click(Unknown Source)
-	at stepdefinitions.MyCoursedemyStepdefinitions.my_course_anasayfa_login_linkine_tiklar(MyCoursedemyStepdefinitions.java:13)
-	at ✽.myCourse anasayfa login linkine tiklar(file:///C:/Users/Hp/OneDrive/Masaüstü/com.CucumberFall2022/src/test/resources/features/US1006_MycoursedemyPozitifLoginTesti.feature:7)
+Then myCourse anasayfa login linkine tiklar.................................passed
+And myCourse kullanici adi olarak "myYanlisEmail" girer.....................passed
+Then myCourse password olarak "myYanlisPassword" girer......................passed
+Then myCourse login butonuna basar..........................................passed
+And myCourse giris yapilmadigini test eder..................................passed
+Then Sayfayi kapatir........................................................passed
 ]]>
-        </failure>
+        </system-out>
+    </testcase>
+    <testcase classname="US1010 Liste olarak verilen wrong user ile negatif login testi" name="_3" time="7.675">
+        <system-out>
+            <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
+Then myCourse anasayfa login linkine tiklar.................................passed
+And myCourse kullanici adi olarak "myYanlisEmail1" girer....................passed
+Then myCourse password olarak "myYanlisPassword1" girer.....................passed
+Then myCourse login butonuna basar..........................................passed
+And myCourse giris yapilmadigini test eder..................................passed
+Then Sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1010 Liste olarak verilen wrong user ile negatif login testi" name="_4" time="8.701">
+        <system-out>
+            <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
+Then myCourse anasayfa login linkine tiklar.................................passed
+And myCourse kullanici adi olarak "myYanlisEmail2" girer....................passed
+Then myCourse password olarak "myYanlisPassword2" girer.....................passed
+Then myCourse login butonuna basar..........................................passed
+And myCourse giris yapilmadigini test eder..................................passed
+Then Sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1010 Liste olarak verilen wrong user ile negatif login testi" name="_5" time="10.293">
+        <system-out>
+            <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
+Then myCourse anasayfa login linkine tiklar.................................passed
+And myCourse kullanici adi olarak "myYanlisEmail3" girer....................passed
+Then myCourse password olarak "myYanlisPassword3" girer.....................passed
+Then myCourse login butonuna basar..........................................passed
+And myCourse giris yapilmadigini test eder..................................passed
+Then Sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1010 Liste olarak verilen wrong user ile negatif login testi" name="_6" time="8.168">
+        <system-out>
+            <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
+Then myCourse anasayfa login linkine tiklar.................................passed
+And myCourse kullanici adi olarak "myYanlisEmail4" girer....................passed
+Then myCourse password olarak "myYanlisPassword4" girer.....................passed
+Then myCourse login butonuna basar..........................................passed
+And myCourse giris yapilmadigini test eder..................................passed
+Then Sayfayi kapatir........................................................passed
+]]>
+        </system-out>
     </testcase>
 </testsuite>

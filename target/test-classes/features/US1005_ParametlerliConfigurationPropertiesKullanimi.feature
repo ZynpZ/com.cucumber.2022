@@ -1,4 +1,4 @@
-@wip
+
 Feature: US1005 Parametreli Configuration Properties Kullanimi
 
   #3 farkli senaryo oluşturun
