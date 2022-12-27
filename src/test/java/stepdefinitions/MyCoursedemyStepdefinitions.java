@@ -30,6 +30,8 @@ public class MyCoursedemyStepdefinitions {
 
     }
 
-
-
+    @Then("myCourse giris yapilmadigini test eder")
+    public void mycourseGirisYapilmadiginiTestEder() {
+        Assert.assertTrue(mycoursedemyPage.loginLinki.isDisplayed());
+    }
 }
