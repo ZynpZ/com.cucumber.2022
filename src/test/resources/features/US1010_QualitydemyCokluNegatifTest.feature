@@ -1,4 +1,4 @@
-@wip
+
 Feature: US1010 Liste olarak verilen wrong user ile negatif login testi
 
   Scenario Outline:
