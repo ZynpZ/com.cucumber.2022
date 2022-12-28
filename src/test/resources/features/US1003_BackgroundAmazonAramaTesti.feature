@@ -15,6 +15,8 @@ Feature: US1003 Background kullanarak Amazon arama testi
     And Arama sonuclarinin Java icerdigini test eder
     And Sayfayi kapatir
 
+
+  @apple
   Scenario: TC07 Kullanici amazonda Apple aramasi yapar
     Then Arama cubuguna Apple yazip aratir
     And Sonuclarin Apple icerdigini test eder

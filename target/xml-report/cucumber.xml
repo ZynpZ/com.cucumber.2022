@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="24.636">
-    <testcase classname="US1011 Automation Practice Kullanici Olusturma Testi" name="TC18 Kullanici yeni kullanici olusturabilmeli" time="24.311">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
-            <![CDATA[Given Kullanici "automationUrl" anasayfaya gider............................passed
-And user signUp linkine tiklar..............................................passed
-And New user bölümüne name ve email adresi girer............................passed
-And SignUp butonuna basar...................................................passed
-And user kisisel bilgilerini ve iletisim bilgilerinin girer.................passed
-And user create acccount butonuna basar.....................................undefined
-Then hesap olustugunu dogrulayin............................................skipped
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.274">
+    <testcase classname="US1003 Background kullanarak Amazon arama testi" name="TC07 Kullanici amazonda Apple aramasi yapar" time="12.006">
+        <failure message="" type="java.lang.AssertionError">
+            <![CDATA[Given Kullanici amazon anasayfaya gider.....................................passed
+Then Arama cubuguna Apple yazip aratir......................................passed
+And Sonuclarin Apple icerdigini test eder...................................failed
+And Sayfayi kapatir.........................................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.AmazonStepDefinitions.sonuclarinAppleIcerdiginiTestEder(AmazonStepDefinitions.java:57)
+	at ✽.Sonuclarin Apple icerdigini test eder(file:///C:/Users/Hp/OneDrive/Masaüstü/com.CucumberFall2022/src/test/resources/features/US1003_BackgroundAmazonAramaTesti.feature:22)
 ]]>
         </failure>
     </testcase>
