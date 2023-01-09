@@ -27,11 +27,12 @@ public class MyCoursedemyStepdefinitions {
     @Then("myCourse giris yapabildigini test eder")
     public void my_course_giris_yapabildigini_test_eder() {
         Assert.assertTrue(mycoursedemyPage.coursesLinki.isDisplayed());
-
     }
-
     @Then("myCourse giris yapilmadigini test eder")
     public void mycourseGirisYapilmadiginiTestEder() {
         Assert.assertTrue(mycoursedemyPage.loginLinki.isDisplayed());
     }
+
+
+
 }

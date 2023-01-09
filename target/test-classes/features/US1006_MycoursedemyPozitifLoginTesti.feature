@@ -1,4 +1,4 @@
-@myCourse
+
 Feature: US1006 Doğru Kullanıcı adı ve password ile pozitif login testi
 
   Scenario: TC12 Kullanici mycoursedemy sitesine giriş yapabilmeli
@@ -10,3 +10,5 @@ Feature: US1006 Doğru Kullanıcı adı ve password ile pozitif login testi
     And myCourse login butonuna basar
     Then myCourse giris yapabildigini test eder
     And Sayfayi kapatir
+
+

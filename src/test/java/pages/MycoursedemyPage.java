@@ -25,4 +25,6 @@ public class MycoursedemyPage {
 
     @FindBy(linkText = "My Courses")
     public WebElement coursesLinki;
+
+
 }

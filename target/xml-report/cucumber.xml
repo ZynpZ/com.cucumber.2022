@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.884">
-    <testcase classname="JDBC kullanarak yeterli bilgi ile database testi yapilabilir" name="JDBC01 kullanici databasede sorgu yapabilmeli" time="3.662">
-        <system-out>
-            <![CDATA[Given Kullanici JDBC ile database'e baglanir................................passed
-Then users tablosundaki isim verilerini alir................................passed
-And isim verilerini test eder...............................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.236">
+    <testcase classname="JDBC03 Kullanici database'de update yapabilmeli" name="TC03 kullanici id degeri ile istedigi soyismi update ettigini test eder" time="2.056">
+        <failure message="Access denied for user 'u480337000_jdbc_user'@'5.27.45.23' (using password: YES)" type="java.sql.SQLException">
+            <![CDATA[Given Kullanici JDBC ile database'e baglanir................................failed
+Then id degeri 14 olan kisinin "last_name" degerini "happiness" yapar.......skipped
+And id si 14 olan kisinin "last_name" degerinin "happiness" oldugunu test eder.skipped
+
+StackTrace:
+java.sql.SQLException: Access denied for user 'u480337000_jdbc_user'@'5.27.45.23' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at databaseStepdefinitions.UsersStepdefinitions.kullanici_jdbc_ile_database_e_baglanir(UsersStepdefinitions.java:40)
+	at ✽.Kullanici JDBC ile database'e baglanir(file:///C:/Users/Hp/OneDrive/Masaüstü/com.CucumberFall2022/src/test/resources/features/JDBC03_updateTesti.feature:6)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>

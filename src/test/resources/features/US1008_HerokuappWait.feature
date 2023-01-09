@@ -12,9 +12,11 @@ Feature: US1008 Herokuapp Wait Testleri
     Then Sayfayi kapatir
 
     #Yeni bir sayfada calısmaya basladığımızda
-  # 1- Feature dosyası olusrturalım
+  # 1- Feature dosyası olusturalım
   # 2- Eksik adımları olusturmak icin
-  #   Runner class'ında dryRun=true yapıp, Runner'ı calıstıralım. olusturulan eksik adımları, Yeni bir class olusturup icerisine yapıstıralım
+  #   Runner class'ında dryRun=true yapıp, Runner'ı calıstıralım. olusturulan eksik adımları,
+  #   Yeni bir class olusturup icerisine yapıstıralım
   # 3- Stepdefinitions class'ındaki eksik adımların java kodlarını POM'a uygun olarak yazalım
   # 4- Locate'leri yapmak için page sayfası oluşturalım
-  #    Page classını acınca bir constructor olusturup, Pagefactory.initElements() methodu'nu kullanarak Driver'ımızı page sayfasına tanıtalım
+  #    Page classını acınca bir constructor olusturup,
+  #    Pagefactory.initElements() methodu'nu kullanarak Driver'ımızı page sayfasına tanıtalım
